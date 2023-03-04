@@ -1,0 +1,114 @@
+@import'./buttons.css';
+
+body {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+
+    /*background-image: repeating-linear-gradient(
+    -40deg,
+    #C8AFE9 0px,
+    #C8AFE9 20px,
+    #FFCFE5 20px,
+    #FFCFE5 40px);*/
+    background: linear-gradient(to top, rgba(255, 255, 255, .25), transparent), url('../images/anime.jpg');
+
+}
+
+body{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    animation: changeBg 5s infinite alternate linear;
+    margin: 0;
+ }
+
+ .main-content{
+    padding-inline: 16px;
+    border: 1px solid #C8AFE9;
+    background: #C8AFE9;
+ }
+
+.wrapper{
+    margin: auto;
+    max-inline-size: 902px;
+}
+
+.main hr{
+    display: none;
+}
+
+.hero{
+    /*background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);*/
+    background: linear-gradient(to top, rgba(255, 255, 255, .25), transparent), url('../images/mandala.jpg');
+    block-size: 50px;
+}
+
+.player{
+    margin-block-start: 100px;
+    /*border-style: ;*/
+    position: relative;
+}
+
+.player video{
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    vertical-align: middle;
+    object-fit: cover;
+    padding-block-end: 100px;
+    border-radius: 20px;
+    
+}
+
+.back-portada{
+    color:rgb(224, 222, 222);
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 20px;
+}
+
+.player-title{
+    color:white;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 20px;
+
+}
+
+.portada{
+    color: white; 
+    position: absolute;
+    inset-block-start: 20px;
+    inset-inline-start: 20px;
+}
+
+.player-actions{
+    position: absolute;
+    inset: 0;
+    /*order: 10px solid blue;*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /*z-index: 2;*/
+}
+
+.player-progress{
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0;
+    display:flex;
+    padding: 130px;
+}
+
+.player-progress input{
+    flex: 1;
+}
+
+.player-overlay{
+    position:absolute;
+    inset: 0;
+    opacity: 0;
+    transition: .3s opacity;
+}
+
+.player:hover .player-overlay{
+    opacity: 1;
+}
+
